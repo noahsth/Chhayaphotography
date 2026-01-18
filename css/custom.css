@@ -113,7 +113,7 @@ img:not([loading="eager"]) {
 }
 
 img[data-loaded="false"] {
-    opacity: 0;
+    opacity: 0.5;
 }
 
 img[data-loaded="true"] {
