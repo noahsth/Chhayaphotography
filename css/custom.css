@@ -42,10 +42,22 @@ html {
     perspective: 1000;
 }
 
+/* Hero image - responsive object-position */
+.hero-image {
+    object-position: 50% 50%;
+}
+
 /* Remove hover effect on hero for better performance */
 @media (prefers-reduced-motion: no-preference) {
     .hero-image {
         transition: transform 0.3s ease-out;
+    }
+}
+
+/* Desktop view - display image as-is */
+@media (min-width: 768px) {
+    .hero-image {
+        object-position: unset !important;
     }
 }
 
@@ -322,4 +334,8 @@ input:valid, textarea:valid, select:valid {
     animation: pulse 0.6s ease;
 }
 
+/* scroll behavior */
 
+html { 
+    scroll-behavior: smooth;
+}
